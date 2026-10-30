@@ -1,19 +1,89 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
-  <link rel="icon" href="./favicon.ico"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link rel="icon" href="https://github.io"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="theme-color" content="#000000"/>
-  <meta name="description" content="Web site created using create-react-app"/>
-  <link rel="apple-touch-icon" href="./logo192.png"/>
-  <link rel="manifest" href="./manifest.json"/>
+  <meta name="description" content="Kaay - Xatspace"/>
   <title>Kaay - Xatspace</title>
-  <script defer="defer" src="./static/js/main.8f168b44.js"></script>
-  <link href="./static/css/main.494367a3.css" rel="stylesheet">
+  
+  <style>
+    /* Estilos básicos de maquetación */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: #1a1a1a;
+      color: #ffffff;
+    }
+    .content_page {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .page_header {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .header_banner img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      display: block;
+    }
+    .header_content_menu {
+      margin-top: 10px;
+    }
+    .menu_link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: #ff4500;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+    .menu_link:hover {
+      background-color: #e03e00;
+    }
+    .menu_link svg {
+      width: 1.2em;
+      height: 1.2em;
+    }
+  </style>
 </head>
 <body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="root"></div>
+
+  <div class="App">
+    <div class="content_page">
+      <div class="page_header">
+        
+        <!-- Contenedor del Banner -->
+        <div class="header_banner">
+          <img src="https://posting.cc" alt="banner" />
+        </div>
+        
+        <!-- Menú de navegación -->
+        <div class="header_content">
+          <div class="header_content_menu">
+            <a href="https://xat.com/Trade" target="_blank" rel="noreferrer" class="menu_link">
+              <!-- Icono SVG de Casa/Home -->
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l1.293 1.293a1 1 0 001.414-1.414l-7-7z"></path>
+              </svg>
+              <span>Trade</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
