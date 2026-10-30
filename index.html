@@ -3,57 +3,91 @@
 <head>
   <meta charset="utf-8"/>
   <link rel="icon" href="https://github.io"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <meta name="theme-color" content="#000000"/>
   <meta name="description" content="Kaay - Xatspace"/>
   <title>Kaay - Xatspace</title>
   
   <style>
-    /* Estilos básicos de maquetación */
+    /* Estilos globales idénticos al contenedor original */
     body {
       margin: 0;
       padding: 0;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background-color: #1a1a1a;
-      color: #ffffff;
+      background-color: #0c0f12; /* Fondo oscuro exacto */
+      color: #f0f3f6;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
     }
-    .content_page {
-      max-width: 1200px;
+    
+    .App {
+      width: 100%;
+      max-width: 950px; /* Ancho idéntico de la plantilla */
       margin: 0 auto;
-      padding: 20px;
+      padding: 16px;
     }
+
+    .content_page {
+      background: #161b22; /* Color de tarjeta/contenedor xatspace */
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
     .page_header {
       display: flex;
       flex-direction: column;
-      gap: 15px;
     }
+
+    .header_banner {
+      width: 100%;
+      border-bottom: 1px solid #30363d;
+    }
+
     .header_banner img {
       width: 100%;
       height: auto;
-      border-radius: 8px;
       display: block;
     }
-    .header_content_menu {
-      margin-top: 10px;
+
+    .header_content {
+      padding: 16px;
+      background: #0d1117;
     }
+
+    .header_content_menu {
+      display: flex;
+      gap: 10px;
+    }
+
+    /* Botón con el diseño exacto */
     .menu_link {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
-      background-color: #ff4500;
-      color: #ffffff;
+      gap: 6px;
+      background-color: #21262d;
+      color: #c9d1d9;
+      border: 1px solid #30363d;
       text-decoration: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      font-weight: bold;
-      transition: background 0.2s;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      transition: .2s cubic-bezier(.3,0,.5,1);
     }
+
     .menu_link:hover {
-      background-color: #e03e00;
+      background-color: #30363d;
+      border-color: #8b949e;
+      color: #f0f6fc;
     }
+
     .menu_link svg {
-      width: 1.2em;
-      height: 1.2em;
+      color: #8b949e;
+      width: 16px;
+      height: 16px;
     }
   </style>
 </head>
@@ -63,16 +97,16 @@
     <div class="content_page">
       <div class="page_header">
         
-        <!-- Contenedor del Banner -->
+        <!-- Banner principal -->
         <div class="header_banner">
           <img src="https://posting.cc" alt="banner" />
         </div>
         
-        <!-- Menú de navegación -->
+        <!-- Barra de navegación inferior -->
         <div class="header_content">
           <div class="header_content_menu">
             <a href="https://xat.com/Trade" target="_blank" rel="noreferrer" class="menu_link">
-              <!-- Icono SVG de Casa/Home -->
+              <!-- Icono SVG de Home -->
               <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l1.293 1.293a1 1 0 001.414-1.414l-7-7z"></path>
               </svg>
