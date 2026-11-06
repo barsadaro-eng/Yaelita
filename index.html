@@ -242,25 +242,25 @@
     <!-- PANTALLA DE INICIO / OVERLAY -->
     <div id="start-screen" class="fixed inset-0 z-50 flex flex-col items-center justify-center transition-opacity duration-1000 ease-in-out px-4 text-center">
         <div class="absolute inset-0 pointer-events-none opacity-40">
-             <div class="absolute top-1/3 left-1/4 w-64 h-64 md:w-96 md:h-96 bg-[var(--magenta-main)] rounded-full blur-[100px] animate-pulse"></div>
-             <div class="absolute bottom-1/3 right-1/4 w-64 h-64 md:w-96 md:h-96 bg-[var(--gold-brown)] rounded-full blur-[100px] animate-pulse" style="animation-delay: 2s;"></div>
+             <div class="absolute top-1/3 left-1/4 w-64 h-64 md:w-96 md:h-96 bg-[var(--gris-main)] rounded-full blur-[100px] animate-pulse"></div>
+             <div class="absolute bottom-1/3 right-1/4 w-64 h-64 md:w-96 md:h-96 bg-[var(--magenta-brown)] rounded-full blur-[100px] animate-pulse" style="animation-delay: 2s;"></div>
         </div>
 
         <button onclick="enterSite()" class="relative z-10 group flex flex-col items-center gap-6 md:gap-8 cursor-hover outline-none tap-highlight-transparent">
             <div class="relative w-32 h-32 md:w-40 md:h-40">
-                <div class="absolute inset-0 rounded-full border border-t-[var(--magenta-main)] border-r-[var(--gold-brown)] border-b-[var(--magenta-main)] border-l-[var(--gold-brown)] animate-[spin_6s_linear_infinite] opacity-80"></div>
+                <div class="absolute inset-0 rounded-full border border-t-[var(--gris-main)] border-r-[var(--blanco-brown)] border-b-[var(--gris-main)] border-l-[var(--gold-brown)] animate-[spin_6s_linear_infinite] opacity-80"></div>
                 <div class="absolute inset-3 rounded-full border border-white/10"></div>
                 
                 <div class="absolute inset-4 rounded-full overflow-hidden flex items-center justify-center bg-black">
                     <!-- FOTO INICIO -->
                     <img src="https://xatimg.com/image/Caxfg4GEA94n.png" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500 scale-110 group-hover:scale-100" onerror="this.src='https://placehold.co/400x400/000000/FFF?text=Subir+inicio.jpg'">
                     <div class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-transparent transition-all">
-                        <i class="fa-solid fa-play text-3xl md:text-4xl text-[var(--gold-shine)] drop-shadow-[0_0_10px_var(--gold-brown)] transform group-hover:scale-110 transition-transform"></i>
+                        <i class="fa-solid fa-play text-3xl md:text-4xl text-[var(--gold-shine)] drop-shadow-[0_0_10px_var(--blanco-brown)] transform group-hover:scale-110 transition-transform"></i>
                     </div>
                 </div>
             </div>
             
-            <span class="text-lg md:text-xl font-serif italic text-[var(--gold-shine)] tracking-[0.2em] uppercase border-b border-transparent group-hover:border-[var(--gris-main)] pb-2 transition-all duration-500">
+            <span class="text-lg md:text-xl font-serif italic text-[var(--blanco-shine)] tracking-[0.2em] uppercase border-b border-transparent group-hover:border-[var(--gris-main)] pb-2 transition-all duration-500">
                 Entrar
             </span>
         </button>
@@ -274,13 +274,13 @@
             
             <!-- Tarjeta Perfil -->
             <div class="glass-card rounded-3xl p-5 md:p-6 relative overflow-hidden group cursor-hover">
-                <div class="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-[var(--gold-brown)] via-[var(--magenta-main)] to-[var(--gold-brown)]"></div>
+                <div class="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-[var(--blanco-brown)] via-[var(--gris-main)] to-[var(--blanco-brown)]"></div>
                 
                 <div class="text-center mb-6 mt-2">
                     <h1 class="text-4xl md:text-5xl font-bold py-2 title-glow select-none">
                         yᴧ͜ɛɭ
                     </h1>
-                    <p class="text-[var(--gold-brown)] text-[10px] md:text-xs tracking-[0.3em] uppercase mt-2 font-semibold border-b border-white/5 pb-3 inline-block">Yael (609247)</p>
+                    <p class="text-[var(--blanco-brown)] text-[10px] md:text-xs tracking-[0.3em] uppercase mt-2 font-semibold border-b border-white/5 pb-3 inline-block">Yael (609247)</p>
                 </div>
 
                 <div class="relative w-full aspect-[4/5] rounded-2xl overflow-hidden mb-6 border border-[var(--blanco-brown)]/20 shadow-2xl">
@@ -289,21 +289,21 @@
                     
                     <div class="absolute bottom-3 right-3 bg-black/70 backdrop-blur-md px-2 py-1 rounded-full border border-[var(--gris-main)]/30 flex items-center gap-1.5">
                         <span class="w-1.5 h-1.5 bg-[var(--gris-main)] rounded-full animate-pulse"></span>
-                        <span class="text-[9px] font-bold text-[var(--gold-shine)] uppercase tracking-wider">En Línea</span>
+                        <span class="text-[9px] font-bold text-[var(--blanco-shine)] uppercase tracking-wider">En Línea</span>
                     </div>
                 </div>
 
                 <div class="grid grid-cols-3 gap-1 text-center pt-2">
                     <div class="group/stat">
-                        <span class="block text-lg md:text-xl font-bold text-white group-hover/stat:text-[var(--gold-brown)] transition-colors">208</span>
+                        <span class="block text-lg md:text-xl font-bold text-white group-hover/stat:text-[var(--blanco-brown)] transition-colors">208</span>
                         <span class="text-[9px] md:text-[10px] text-gray-500 uppercase tracking-wider">Posts</span>
                     </div>
                     <div class="group/stat">
-                        <span class="block text-lg md:text-xl font-bold text-white group-hover/stat:text-[var(--magenta-main)] transition-colors">12.5k</span>
+                        <span class="block text-lg md:text-xl font-bold text-white group-hover/stat:text-[var(--gris-main)] transition-colors">12.5k</span>
                         <span class="text-[9px] md:text-[10px] text-gray-500 uppercase tracking-wider">Subs</span>
                     </div>
                     <div class="group/stat">
-                        <span class="block text-lg md:text-xl font-bold text-white group-hover/stat:text-[var(--gold-brown)] transition-colors">138</span>
+                        <span class="block text-lg md:text-xl font-bold text-white group-hover/stat:text-[var(--blanco-brown)] transition-colors">138</span>
                         <span class="text-[9px] md:text-[10px] text-gray-500 uppercase tracking-wider">Follows</span>
                     </div>
                 </div>
@@ -315,23 +315,23 @@
                     </button>
 
                     <button class="cursor-hover w-10 h-10 md:w-12 md:h-12 glass-card rounded-xl flex items-center justify-center hover:bg-white/5 transition-colors group/icon border border-[var(--gold-brown)]/20">
-                        <i class="fa-brands fa-instagram text-lg md:text-xl text-[var(--gold-brown)] group-hover/icon:text-[var(--magenta-main)] transition-colors"></i>
+                        <i class="fa-brands fa-instagram text-lg md:text-xl text-[var(--blanco-brown)] group-hover/icon:text-[var(--gris-main)] transition-colors"></i>
                     </button>
                     <button class="cursor-hover w-10 h-10 md:w-12 md:h-12 glass-card rounded-xl flex items-center justify-center hover:bg-white/5 transition-colors group/icon border border-[var(--gold-brown)]/20">
-                        <i class="fa-brands fa-tiktok text-lg md:text-xl text-[var(--gold-brown)] group-hover/icon:text-[var(--magenta-main)] transition-colors"></i>
+                        <i class="fa-brands fa-tiktok text-lg md:text-xl text-[var(--blanco-brown)] group-hover/icon:text-[var(--gris-main)] transition-colors"></i>
                     </button>
                 </div>
             </div>
 
             <!-- Mini Bio -->
-            <div class="glass-card rounded-3xl p-4 md:p-5 flex items-center gap-3 md:gap-4 cursor-hover border-l-2 border-l-[var(--gold-brown)]">
+            <div class="glass-card rounded-3xl p-4 md:p-5 flex items-center gap-3 md:gap-4 cursor-hover border-l-2 border-l-[var(--blanco-brown)]">
                 <div class="w-10 h-10 md:w-12 md:h-12 rounded-full overflow-hidden border border-[var(--gold-shine)] p-0.5 shrink-0">
                     <!-- FOTO BIO -->
                     <img src="https://xatimg.com/image/dIcyfI4nZBCi.jpg" class="w-full h-full object-cover rounded-full" onerror="this.src='https://placehold.co/200x200/222/FFF?text=bio.jpg'">
                 </div>
                 <div>
                     <h3 class="text-xs md:text-sm font-bold text-white">@Yael</h3>
-                    <p class="text-[10px] md:text-xs text-gray-400 mt-0.5"> (609247) <span class="text-[var(--magenta-main)]"></span>  <span class="text-[var(--gold-brown)]"></span>.</p>
+                    <p class="text-[10px] md:text-xs text-gray-400 mt-0.5"> (609247) <span class="text-[var(--gris-main)]"></span>  <span class="text-[var(--blanco-brown)]"></span>.</p>
                 </div>
             </div>
         </section>
@@ -341,14 +341,14 @@
 
             <!-- REPRODUCTOR -->
             <div class="glass-card rounded-3xl p-6 md:p-8 relative overflow-hidden">
-                <div class="absolute -top-20 -right-20 w-40 h-40 md:w-64 md:h-64 bg-[var(--gold-brown)]/5 rounded-full blur-[80px] pointer-events-none"></div>
-                <div class="absolute -bottom-20 -left-20 w-40 h-40 md:w-64 md:h-64 bg-[var(--magenta-main)]/5 rounded-full blur-[80px] pointer-events-none"></div>
+                <div class="absolute -top-20 -right-20 w-40 h-40 md:w-64 md:h-64 bg-[var(--blanco-brown)]/5 rounded-full blur-[80px] pointer-events-none"></div>
+                <div class="absolute -bottom-20 -left-20 w-40 h-40 md:w-64 md:h-64 bg-[var(--gris-main)]/5 rounded-full blur-[80px] pointer-events-none"></div>
 
                 <div class="flex items-start justify-between mb-6 md:mb-8 relative z-10">
                     <div>
                         <div class="flex items-center gap-2 mb-1">
-                            <i class="fa-solid fa-compact-disc text-[var(--magenta-main)] animate-[spin_4s_linear_infinite]"></i>
-                            <h2 class="text-[10px] md:text-xs font-bold text-[var(--gold-shine)] uppercase tracking-[0.2em]">Now Playing</h2>
+                            <i class="fa-solid fa-compact-disc text-[var(--gris-main)] animate-[spin_4s_linear_infinite]"></i>
+                            <h2 class="text-[10px] md:text-xs font-bold text-[var(--blanco-shine)] uppercase tracking-[0.2em]">Now Playing</h2>
                         </div>
                         <p class="text-xl md:text-2xl font-serif italic text-white/90">My Playlist</p>
                     </div>
